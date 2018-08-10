@@ -1,0 +1,13 @@
+.row {
+padding-top: 10px;
+max-width: 90%
+}
+
+.col {
+  overflow-x: scroll;
+  max-width: 30%;
+}
+
+.label {
+  padding: 3px;
+}
