@@ -1,13 +1,16 @@
 .row {
-padding-top: 10px;
-max-width: 90%
+  padding-top: 10px;
+  max-width: 90%
 }
 
 .col {
-  overflow-x: scroll;
+  overflow: hidden;
   max-width: 30%;
 }
 
 .label {
   padding: 3px;
+}
+h4 {
+  overflow: scroll;
 }

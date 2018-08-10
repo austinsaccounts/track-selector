@@ -4,20 +4,29 @@
 
 
 $(document).ready(function() {
-  $("form#triangle").submit(function(event) {
+  $("#trackSelection").submit(function(event) {
     event.preventDefault();
 
-    var side1 = parseInt($("#triangle1").val());
-    var side2 = parseInt($("#triangle2").val());
-    var side3 = parseInt($("#triangle3").val());
+    var choice1 = $('input[name=q1]:checked', '#trackSelection').val()
+    var choice2 = $('input[name=q2]:checked', '#trackSelection').val()
+    var choice3 = $('input[name=q3]:checked', '#trackSelection').val()
+    var choice4 = $('input[name=q4]:checked', '#trackSelection').val()
+    var choice5 = $('input[name=q5]:checked', '#trackSelection').val()
+    var choice6 = $('input[name=q6]:checked', '#trackSelection').val()
+    var choice7 = $('input[name=q7]:checked', '#trackSelection').val()
+    var choice8 = $('input[name=q8]:checked', '#trackSelection').val()
+    var choice9 = $('input[name=q9]:checked', '#trackSelection').val()
 
-    console.log(side3, side2, side1);
+    var tester = $(parseInt(3));
 
-    var triquery= function(side1, side2, side3) {
 
-      console.log(side1, side2, side3);
-      return("");
-    };
-      $("ul#results").append(triquery(side1, side2, side3));
+    console.log(parseInt(tester)+parseInt(tester));
+ $()
+    // var triquery= function(side1, side2, side3) {
+
+    //   console.log(side1, side2, side3);
+    //   return("");
+    // };
+      $("#results").append(choice1);
     });
   });
