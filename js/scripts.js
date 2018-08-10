@@ -1,6 +1,6 @@
+var java;
 var ruby;
 var php;
-var java;
 
 var selectionPath = function(selection) {
 console.log("selection path fired")
@@ -16,16 +16,22 @@ console.log("selection path fired")
   {
     java = java +1;
   }
-  console.log(java);
 };
 
-// var i;
-// for (i = 0; i < 9; i++) {
-// var j = j++;
-// $(selectionPath(choice"" + j)));
-// }
-
-
+var whatPath = function(java, ruby, php) {
+  if (java > ruby && java > php)
+  {
+    return "trackJava";
+  }
+  if (php > ruby && php > java)
+  {
+    return "trackPhp";
+  }
+  if (ruby > java &&  ruby > php)
+  {
+    return "trackRuby";
+  }
+};
 //business logic
 
 
@@ -37,7 +43,6 @@ $(document).ready(function() {
     ruby = 0;
     java = 0;
     php = 0;
-
     var choice1 = $('input[name=q1]:checked', '#trackSelection').val();
     var choice2 = $('input[name=q2]:checked', '#trackSelection').val();
     var choice3 = $('input[name=q3]:checked', '#trackSelection').val();
@@ -59,6 +64,7 @@ $(document).ready(function() {
     $(selectionPath(choice7));
     $(selectionPath(choice8));
     $(selectionPath(choice9));
-    //   // $("#results").append(choice1);
+    //this could be done easily with a loop??//
+
     });
   });
