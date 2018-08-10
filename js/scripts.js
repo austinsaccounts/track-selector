@@ -3,17 +3,20 @@ var php;
 var java;
 
 var selectionPath = function(selection) {
-  alert("ruby precount");
+console.log("selection path fired")
   if(selection === "track1")
   {
     ruby = ruby + 1;
-    alert("this fired")
   }
   if(selection === "track2")
   {
-    alert("you blew2");
+    php = php + 1;
   }
-  return $(ruby+1);
+  if(selection === "track3")
+  {
+    java = java +1;
+  }
+  console.log(java);
 };
 
 // var i;
@@ -44,13 +47,18 @@ $(document).ready(function() {
     var choice7 = $('input[name=q7]:checked', '#trackSelection').val();
     var choice8 = $('input[name=q8]:checked', '#trackSelection').val();
     var choice9 = $('input[name=q9]:checked', '#trackSelection').val();
-
+    var j = 0;
     var i;
-for (i = 0; i < 9; i++) {
-    var j = j++;
-    $(selectionPath(choice"" + j));
-}
+
+    $(selectionPath(choice1));
+    $(selectionPath(choice2));
+    $(selectionPath(choice3));
+    $(selectionPath(choice4));
+    $(selectionPath(choice5));
+    $(selectionPath(choice6));
+    $(selectionPath(choice7));
+    $(selectionPath(choice8));
+    $(selectionPath(choice9));
     //   // $("#results").append(choice1);
-    console.log(choice + j);
     });
   });
