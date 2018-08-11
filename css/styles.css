@@ -1,16 +1,38 @@
-.row {
-  padding-top: 10px;
-  max-width: 90%
+body {
+  text-align: center;
+  background-color: green;
 }
 
-.col {
-  overflow: hidden;
-  max-width: 30%;
+h1 {
+  margin: 30px;
+}
+h3 {
+  margin-top: 30px;
 }
 
-.label {
-  padding: 3px;
+.col-md-4 {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 200px;
+  background-color: #C1E5FF;
+  overflow-x: hidden;
 }
-h4 {
-  overflow: scroll;
+
+.col-md-4:hover {
+  cursor: pointer;
+}
+
+p {
+  margin-top: 30px;
+}
+
+span {
+  margin: 5px;
+  align-self:
+  text-align: justify;
+}
+
+.radio{
+vertical-align: middle;
+margin:5px;
 }
