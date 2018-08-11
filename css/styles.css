@@ -3,23 +3,16 @@ body {
   background-color: green;
 }
 
+<p> {
+  color: purple;
+}
+
 h1 {
   margin: 30px;
 }
+
 h3 {
   margin-top: 30px;
-}
-
-.col-md-4 {
-  border: 1px solid black;
-  border-radius: 5px;
-  height: 200px;
-  background-color: #C1E5FF;
-  overflow-x: hidden;
-}
-
-.col-md-4:hover {
-  cursor: pointer;
 }
 
 p {
@@ -28,21 +21,22 @@ p {
 
 span {
   margin: 5px;
-  align-self:
-  text-align: justify;
+  align-self: text-align: justify;
 }
 
-.radio{
-vertical-align: middle;
-margin:5px;
+.radio {
+  vertical-align: middle;
+  margin: 5px;
 }
 
 #python {
   display: none;
 }
+
 #java {
   display: none;
 }
+
 #ruby {
   display: none;
 }
