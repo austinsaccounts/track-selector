@@ -6,7 +6,7 @@ var selectionPath = function(selection) {
 console.log("selection path fired")
   if(selection === "track1")
   {
-    ruby = ruby + 1;
+    java = java +1;
   }
   if(selection === "track2")
   {
@@ -14,22 +14,24 @@ console.log("selection path fired")
   }
   if(selection === "track3")
   {
-    java = java +1;
+    ruby = ruby + 1;
   }
 };
 
 var whatPath = function(java, ruby, php) {
   if (java > ruby && java > php)
   {
+    $("#java").show();
     return("trackJava");
   }
   if (php > ruby && php > java)
   {
+    $("#python").show();
     return("trackPhp");
   }
   if (ruby > java &&  ruby > php)
   {
-
+    $(".ruby").show();
     return("trackRuby");
   }
 };
@@ -61,7 +63,7 @@ $(document).ready(function() {
     var thisthing = whatPath(java, php, ruby);
   $("#results").append(whatPath(java, php, ruby));
 $("#trackSelection").hide();
-$("#"+thisThing).show();
-  console.log(thisthing);
+
+
     });
   });

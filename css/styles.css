@@ -36,3 +36,13 @@ span {
 vertical-align: middle;
 margin:5px;
 }
+
+#python {
+  display: none;
+}
+#java {
+  display: none;
+}
+#ruby {
+  display: none;
+}
