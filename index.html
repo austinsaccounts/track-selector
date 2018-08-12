@@ -17,9 +17,9 @@
 
 <body>
   <div class="container">
-    <h1 class="jumbotron">Which Learning track is for you?</h1>
-    <div class="questions">
       <form class="form form-group" id="trackSelection">
+        <h1 class="jumbotron">Which Learning track is for you?</h1>
+        <div class="questions">
         <p>What intrigues you</p>
         <div class="radio">
           <ul>
@@ -28,7 +28,7 @@
         <li><input type="radio" name="q1" value="track3"> gems <br>
       </div>
       <div class="radio">
-        <h2> what language do you want to learn? </h2>
+        <p> what language do you want to learn? </p>
         <input type="radio" name="q2" checked="checked" value="track1"> java <br>
         <input type="radio" name="q2" value="track2">python<br>
         <input type="radio" name="q2" value="track3">ruby<br>
@@ -51,16 +51,31 @@
         <input type="radio" name="q5" value="track2"> efficient <br>
         <input type="radio" name="q5" value="track3"> multicapable<br>
       </div>
+      <button type="submit" class="btn btn-primary">submit</button>
     </div>
-        <button type="submit" class="btn btn-primary">submit</button>
+
     </form>
-
+  </div>
+<div class="container resultingTrack">
       <h2>Results</h2>
-      <h3 id="results"> </h3>
-      <img src="https://static.makeuseof.com/wp-content/uploads/2018/02/control-arduino-python-670x335.jpg" alt="python" id="python">
-      <img src="https://static1.squarespace.com/static/59090f2e6a496317a4cf80fc/t/591f7ae6d1758e1295eba2a8/1529428517353/?format=1500w" alt="ruby" id="ruby">
-      <img src="https://s24255.pcdn.co/wp-content/uploads/2014/05/oracle-java.jpg" alt="java" id="java">
+      <h3 id="results"><button type="submit" class="btn btn-primary">Reaveal Reults</button></h3>
 
+
+      <div class="python slideUp">
+        <h3> Python </h3>
+        <p> Python may be a good fit for you, its known for its ease of access and intuitive design style </p>
+      <img src="https://static.makeuseof.com/wp-content/uploads/2018/02/control-arduino-python-670x335.jpg" alt="python">
+      </div>
+      <div class="ruby slideUp">
+      <h3> Ruby </h3>
+      <p>Ruby may interest you, it may be more compex than some other languages but it also allows for a greater degree of manipulation and precision than some other languages </p>
+      <img src="https://static1.squarespace.com/static/59090f2e6a496317a4cf80fc/t/591f7ae6d1758e1295eba2a8/1529428517353/?format=1500w" alt="ruby">
+      <div class="java slideUp">
+        <h3> Java </h3>
+        <p> Java is the most popular of the languages and used everywhere, if you're looking to be one of the cool kids, this language may be the one for you</p>
+      <img src="https://s24255.pcdn.co/wp-content/uploads/2014/05/oracle-java.jpg" alt="java">
+      </div>
     </div>
+  </div>
   </body>
 </html>

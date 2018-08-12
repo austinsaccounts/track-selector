@@ -1,6 +1,7 @@
 var java;
-var ruby;
 var php;
+var ruby;
+
 
 var selectionPath = function(selection) {
 console.log("selection path fired")
@@ -18,7 +19,7 @@ console.log("selection path fired")
   }
 };
 
-var whatPath = function(java, ruby, php) {
+var whatPath = function(java, php, ruby) {
   if (java > ruby && java > php)
   {
     $("#java").show();
@@ -26,13 +27,14 @@ var whatPath = function(java, ruby, php) {
   }
   if (php > ruby && php > java)
   {
-    $("#python").show();
-    return("trackPhp");
+    // $("#python").removeClass("hid");
+    // $("#python").addClass("slider");
+    return("#python");
   }
   if (ruby > java &&  ruby > php)
   {
-    $(".ruby").show();
-    return("trackRuby");
+    $("#ruby").show();
+    return("#ruby");
   }
 };
 //business logic
@@ -60,10 +62,14 @@ $(document).ready(function() {
     $(selectionPath(choice3));
     $(selectionPath(choice4));
     $(selectionPath(choice5));
-    var thisthing = whatPath(java, php, ruby);
-  $("#results").append(whatPath(java, php, ruby));
-$("#trackSelection").hide();
-
+    $("#results").append(whatPath(java, php, ruby));
+    $("#trackSelection").hide();
+    $(".btn2").click(function(){
+        $("p").slideDown(1000);
+    });
+});
+    console.log(whatPath(java, php, ruby));
+    // $(whatPath(java, php, ruby));
 
     });
   });
