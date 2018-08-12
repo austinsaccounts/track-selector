@@ -52,21 +52,18 @@ $(document).ready(function() {
     var choice3 = $('input[name=q3]:checked', '#trackSelection').val();
     var choice4 = $('input[name=q4]:checked', '#trackSelection').val();
     var choice5 = $('input[name=q5]:checked', '#trackSelection').val();
-    var j = 0;
-    var i;
+    var userName = $('#txt_name').val();
 
     $(selectionPath(choice1));
     $(selectionPath(choice2));
     $(selectionPath(choice3));
     $(selectionPath(choice4));
     $(selectionPath(choice5));
-    $("#results").append(whatPath(java, php, ruby));
-    $("#trackSelection").hide();
-    console.log(whatPath(java, php, ruby));
-    // $(whatPath(java, php, ruby));
+    $(".trackSelection").hide();
+    $(".resultingTrack").show();
+    $("#results").append(" " + userName + " ");
     });
     $("#reveal").click(function(){
-      alert("fired reveal click")
       console.log(revelation);
       var revelation = $(whatPath(java, php, ruby));
       $(revelation).slideDown(1000);

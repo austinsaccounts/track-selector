@@ -21,7 +21,8 @@ p {
 
 span {
   margin: 5px;
-  align-self: text-align: justify;
+  align-self: center;
+  text-align: justify;
 }
 
 .radio {
@@ -47,6 +48,10 @@ img  {
 }
 
 .ruby {
+  display: none;
+}
+
+.resultingTrack {
   display: none;
 }
 
