@@ -2,7 +2,6 @@ var java;
 var php;
 var ruby;
 
-
 var selectionPath = function(selection) {
 console.log("selection path fired")
   if(selection === "track1")
@@ -22,19 +21,18 @@ console.log("selection path fired")
 var whatPath = function(java, php, ruby) {
   if (java > ruby && java > php)
   {
-    $("#java").show();
-    return("trackJava");
+    // $("#java").show();
+    return(".java");
   }
   if (php > ruby && php > java)
   {
     // $("#python").removeClass("hid");
     // $("#python").addClass("slider");
-    return("#python");
+    return(".python");
   }
   if (ruby > java &&  ruby > php)
   {
-    $("#ruby").show();
-    return("#ruby");
+    return(".ruby");
   }
 };
 //business logic
@@ -64,12 +62,13 @@ $(document).ready(function() {
     $(selectionPath(choice5));
     $("#results").append(whatPath(java, php, ruby));
     $("#trackSelection").hide();
-    $(".btn2").click(function(){
-        $("p").slideDown(1000);
-    });
-});
     console.log(whatPath(java, php, ruby));
     // $(whatPath(java, php, ruby));
-
     });
-  });
+    $("#reveal").click(function(){
+      alert("fired reveal click")
+      console.log(revelation);
+      var revelation = $(whatPath(java, php, ruby));
+      $(revelation).slideDown(1000);
+    });
+    });
