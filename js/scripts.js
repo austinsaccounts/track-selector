@@ -17,17 +17,13 @@ console.log("selection path fired")
     ruby = ruby + 1;
   }
 };
-
 var whatPath = function(java, php, ruby) {
   if (java > ruby && java > php)
   {
-    // $("#java").show();
     return(".java");
   }
   if (php > ruby && php > java)
   {
-    // $("#python").removeClass("hid");
-    // $("#python").addClass("slider");
     return(".python");
   }
   if (ruby > java &&  ruby > php)
@@ -54,6 +50,7 @@ $(document).ready(function() {
     var choice5 = $('input[name=q5]:checked', '#trackSelection').val();
     var userName = $('#txt_name').val();
 
+
     $(selectionPath(choice1));
     $(selectionPath(choice2));
     $(selectionPath(choice3));
@@ -62,10 +59,9 @@ $(document).ready(function() {
     $(".trackSelection").hide();
     $(".resultingTrack").show();
     $("#results").append(" " + userName + " ");
-    });
     $("#reveal").click(function(){
-      console.log(revelation);
       var revelation = $(whatPath(java, php, ruby));
       $(revelation).slideDown(1000);
     });
     });
+  });

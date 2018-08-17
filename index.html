@@ -1,84 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Track me</title>
+  </head>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.3.1.js"></script>
-  <script src="js/scripts.js"></script>
-
-  <title>Track me</title>
-</head>
-
-<body>
-  <div class="container trackSelection">
-      <form class="form form-group" id="trackSelection">
-        <h1 class="jumbotron">Which Learning track is for you?</h1>
-      <input type="text" id="txt_name"  placeholder="Please enter your name">
-                <div class="questions">
-        <p>What intrigues you</p>
+  <body>
+    <div class="container trackSelection">
+        <form class="form form-group" id="trackSelection">
+          <div class="jumbotron"><h3>Which Learning track is for you?</h3></div>
+        <input type="text" id="txt_name" placeholder="name">What shall we call you?</input>
+                  <div class="questions">
+          <h3>What intrigues you</h3>
+          <div class="radio">
+          <input type="radio" name="q1" checked="checked" value="track1">coffee</input>
+          <input type="radio" name="q1" value="track2">snakes</input>
+          <input type="radio" name="q1" value="track3">gems </input>
+          </div>
         <div class="radio">
-        <input type="radio" name="q1" checked="checked" value="track1"> coffee <br>
-        <input type="radio" name="q1" value="track2"> snakes <br>
-        <input type="radio" name="q1" value="track3"> gems <br>
+          <h3> what language do you want to learn? </h3>
+          <input type="radio" name="q2" checked="checked" value="track1"> java</input>
+          <input type="radio" name="q2" value="track2">python</input>
+          <input type="radio" name="q2" value="track3">ruby</input>
         </div>
-      <div class="radio">
-        <p> what language do you want to learn? </p>
-        <input type="radio" name="q2" checked="checked" value="track1"> java <br>
-        <input type="radio" name="q2" value="track2">python<br>
-        <input type="radio" name="q2" value="track3">ruby<br>
+        <div class="radio">
+          <h3> what would your ideal languages adjective be?</h3>
+          <input type="radio" name="q3" checked="checked" value="track1">popular</input>
+          <input type="radio" name="q3" value="track2">easy</input>
+          <input type="radio" name="q3" value="track3">fanciful</input>
+        </div>
+        <div class="radio">
+          <h3> do you feel that you're more </h3>
+          <input type="radio" name="q4" checked="checked" value="track1"> internet saavy</input>
+          <input type="radio" name="q4" value="track2"> book smarts</input>
+          <input type="radio" name="q4" value="track3"> creative</input>
+        </div>
+        <div class="radio">
+          <h3> which is better</h3>
+          <input type="radio" name="q5" checked="checked" value="track1"> universal</input>
+          <input type="radio" name="q5" value="track2"> efficient </input>
+          <input type="radio" name="q5" value="track3"> multicapable</input>
+        </div>
+        <button type="submit" class="btn btn-primary">submit</button>
       </div>
-      <div class="radio">
-        <p> what would your ideal languages adjective be? </p>
-        <input type="radio" name="q3" checked="checked" value="track1">popular<br>
-        <input type="radio" name="q3" value="track2">easy<br>
-        <input type="radio" name="q3" value="track3">fanciful<br>
-      </div>
-      <div class="radio">
-        <p> do you feel that you're more </p>
-        <input type="radio" name="q4" checked="checked" value="track1"> internet saavy <br>
-        <input type="radio" name="q4" value="track2"> book smarts <br>
-        <input type="radio" name="q4" value="track3"> creative <br>
-      </div>
-      <div class="radio">
-        <p> which is better</p>
-        <input type="radio" name="q5" checked="checked" value="track1"> universal<br>
-        <input type="radio" name="q5" value="track2"> efficient <br>
-        <input type="radio" name="q5" value="track3"> multicapable<br>
-      </div>
-      <button type="submit" class="btn btn-primary">submit</button>
+      </form>
     </div>
-    </form>
-  </div>
 
-<div class="container resultingTrack">
-      <h3> Congratulations, <span id="results">
-      </span> Would you like your results? </h3>
-      <button type="submit" class="btn btn-primary" id="reveal"> Yes, Show me </button>
+  <div class="container resultingTrack">
+        <h3> Congratulations, <span id="results">
+        </span> Would you like your results? </h3>
+        <button type="submit" class="btn btn-primary" id="reveal"> Yes, Show me </button>
 
 
-      <div class="python">
-        <h3> Python </h3>
-        <p> Python may be a good fit for you, its known for its ease of access and intuitive design style </p>
-      <img src="https://static.makeuseof.com/wp-content/uploads/2018/02/control-arduino-python-670x335.jpg" alt="python">
+        <div class="python">
+          <h3> Python </h3>
+          <p> Python may be a good fit for you, its known for its ease of access and intuitive design style </p>
+        <img src="https://static.makeuseof.com/wp-content/uploads/2018/02/control-arduino-python-670x335.jpg" alt="python">
+        </div>
+        <div class="ruby">
+        <h3> Ruby </h3>
+        <p>Ruby may interest you, it may be more compex than some other languages but it also allows for a greater degree of manipulation and precision than some other languages </p>
+        <img src="https://static1.squarespace.com/static/59090f2e6a496317a4cf80fc/t/591f7ae6d1758e1295eba2a8/1529428517353/?format=1500w" alt="ruby">
       </div>
-      <div class="ruby">
-      <h3> Ruby </h3>
-      <p>Ruby may interest you, it may be more compex than some other languages but it also allows for a greater degree of manipulation and precision than some other languages </p>
-      <img src="https://static1.squarespace.com/static/59090f2e6a496317a4cf80fc/t/591f7ae6d1758e1295eba2a8/1529428517353/?format=1500w" alt="ruby">
-    </div>
-      <div class="java">
-        <h3> Java </h3>
-        <p> Java is the most popular of the languages and used everywhere, if you're looking to be one of the cool kids, this language may be the one for you</p>
-      <img src="https://s24255.pcdn.co/wp-content/uploads/2014/05/oracle-java.jpg" alt="java">
+        <div class="java">
+          <h3> Java </h3>
+          <p> Java is the most popular of the languages and used everywhere, if you're looking to be one of the cool kids, this language may be the one for you</p>
+        <img src="https://s24255.pcdn.co/wp-content/uploads/2014/05/oracle-java.jpg" alt="java">
       </div>
-
     </div>
-  </div>
   </body>
 </html>

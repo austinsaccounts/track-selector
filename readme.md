@@ -2,7 +2,7 @@
 
 #### This project will decide what epicodus track you should pursue
 
-#### By _**{List of contributors}**_
+#### By Austin
 
 ## Description
 
@@ -16,12 +16,7 @@ https://github.com/austinsaccounts/track-selector.git
 
 
 ## Known Bugs
-
-_its super ugly and will be fixed soon
-
-## Support and contact details
-
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+n/a
 
 ## Technologies Used
 
