@@ -1,13 +1,17 @@
 .jumbotron {
-max-width: 500pt;
-padding: 10pt;
-max-height: 120px;
-height: 100px;
+display: inline-block;
+padding: 28pt;
+margin: 10 auto;
+background-color: rgba(1,1,1,.1);
+
+
+/* width: 0   auto; */
 }
 
 body {
-  text-align: center;
   background-color: green;
+  text: justify;
+  text-align: center;
 }
 
 <p> {
@@ -15,11 +19,11 @@ body {
 }
 
 h1 {
-  margin: 10px;
+  margin: 5px;
 }
 
 h3 {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 p {
@@ -33,17 +37,17 @@ span {
 }
 
 .radio {
-  vertical-align: middle;
-  margin: 5px;
+  display: block;
+  vertical-align: inline;
+  width: auto;
 }
 
 .hid {
   max-height: 0px;
 }
 
-img  {
+img {
   max-height: 350px;
-  /* max-width: */
 }
 
 .python {
@@ -62,4 +66,19 @@ img  {
   display: none;
   font-style: italic;
   font-weight: bolder;
+}
+label {
+  margin: auto;
+}
+#txt_name {
+  background: rgba(1,1,1,.1);;
+  color: rgba(25, 25, 25, 1);
+  text-align: center;
+}
+#txt_name::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: lime;
+}
+#trackSelection {
+  height: 350pt;
+  overflow-x: auto;
 }
